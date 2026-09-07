@@ -167,30 +167,30 @@
       <div class="mx-auto grid min-h-[calc(100*min(var(--vh,1vh),1vh)-10rem)] max-w-7xl items-end gap-8 lg:grid-cols-12">
         <div class="relative z-10 lg:col-span-5 lg:pb-8">
           <p data-template-id="hero-kicker" class="canva-text section-kicker mb-6" style="color: rgb(226, 201, 141); font-weight: 600; font-style: normal; font-size: 11px; letter-spacing: 0.18rem;">Portfolio mannequin / 2026</p>
-          <h1 data-template-id="hero-name" class="canva-text editorial max-w-xl text-6xl leading-[.88] sm:text-7xl lg:text-8xl" style="color: rgb(244, 240, 232); font-weight: 500; font-style: normal; font-size: 32px; line-height: 0.9;">NOM DU MANNEQUIN</h1>
+          <h1 data-template-id="hero-name" class="canva-text editorial max-w-xl text-6xl leading-[.88] sm:text-7xl lg:text-8xl" style="color: rgb(244, 240, 232); font-weight: 500; font-style: normal; font-size: 32px; line-height: 0.9;">CORDEL Noé</h1>
           <div class="gold-rule my-8 h-px w-40"></div>
-          <p data-template-id="hero-tagline" class="canva-text max-w-md text-base leading-7 md:text-lg" style="color: rgb(212, 208, 200); font-weight: 400; font-style: normal; font-size: 18px; line-height: 1.55;">Une présence singulière pour l’éditorial, le runway et les campagnes contemporaines.</p>
+          <p data-template-id="hero-tagline" class="canva-text max-w-md text-base leading-7 md:text-lg" style="color: rgb(212, 208, 200); font-weight: 400; font-style: normal; font-size: 18px; line-height: 1.55;">Une présence singulière pour l’éditorial, le commercial et les campagnes contemporaines.</p>
           <dl class="mt-10 grid max-w-md gap-3 border-t pt-5 text-xs leading-5 sm:grid-cols-2">
             <div>
               <dt data-template-id="hero-email-label" class="canva-text uppercase tracking-[.14em]" style="color: rgb(196, 160, 90); font-weight: 600; font-style: normal; font-size: 10px; letter-spacing: 0.12rem;">Email</dt>
-              <dd data-template-id="hero-email" class="canva-text mt-1 break-all" style="color: rgb(244, 240, 232); font-weight: 400; font-style: normal; font-size: 12px;">email@a-remplacer.example</dd>
+              <dd data-template-id="hero-email" class="canva-text mt-1 break-all" style="color: rgb(244, 240, 232); font-weight: 400; font-style: normal; font-size: 12px;">noe.cordel@gmail.com</dd>
             </div>
             <div>
               <dt data-template-id="hero-phone-label" class="canva-text uppercase tracking-[.14em]" style="color: rgb(196, 160, 90); font-weight: 600; font-style: normal; font-size: 10px; letter-spacing: 0.12rem;">Téléphone</dt>
-              <dd data-template-id="hero-phone" class="canva-text mt-1" style="color: rgb(244, 240, 232); font-weight: 400; font-style: normal; font-size: 12px;">+00 00 00 00 00</dd>
+              <dd data-template-id="hero-phone" class="canva-text mt-1" style="color: rgb(244, 240, 232); font-weight: 400; font-style: normal; font-size: 12px;">+33 07 81 85 45 03</dd>
             </div>
             <div>
               <dt data-template-id="hero-agency-label" class="canva-text uppercase tracking-[.14em]" style="color: rgb(196, 160, 90); font-weight: 600; font-style: normal; font-size: 10px; letter-spacing: 0.12rem;">Agence</dt>
-              <dd data-template-id="hero-agency" class="canva-text mt-1" style="color: rgb(244, 240, 232); font-weight: 400; font-style: normal; font-size: 12px;">AGENCE À REMPLACER</dd>
+              <dd data-template-id="hero-agency" class="canva-text mt-1" style="color: rgb(244, 240, 232); font-weight: 400; font-style: normal; font-size: 12px;">RECHERCHE AGENCE/MARQUE</dd>
             </div>
             <div>
               <dt data-template-id="hero-location-label" class="canva-text uppercase tracking-[.14em]" style="color: rgb(196, 160, 90); font-weight: 600; font-style: normal; font-size: 10px; letter-spacing: 0.12rem;">Localisation</dt>
-              <dd data-template-id="hero-location" class="canva-text mt-1" style="color: rgb(244, 240, 232); font-weight: 400; font-style: normal; font-size: 12px;">VILLE / PAYS À REMPLACER</dd>
+              <dd data-template-id="hero-location" class="canva-text mt-1" style="color: rgb(244, 240, 232); font-weight: 400; font-style: normal; font-size: 12px;">GRENOBLE / FRANCE</dd>
             </div>
           </dl>
         </div>
         <div class="hero-photo relative overflow-hidden bg-neutral-900 lg:col-span-7 lg:h-[calc(100*min(var(--vh,1vh),1vh)-9rem)]">
-          <img data-template-id="hero-image" loading="lazy" class="canva-image h-[58vh] w-full object-cover object-center lg:h-full" src="https://images.pexels.com/photos/13660182/pexels-photo-13660182.jpeg" alt="Placeholder photo héroïque : portrait studio noir et blanc d’un mannequin">
+          <img data-template-id="hero-image" loading="lazy" class="canva-image h-[58vh] w-full object-cover object-center lg:h-full" src="[https://images.pexels.com/photos/13660182/pexels-photo-13660182.jpeg](https://ibb.co/Q7XTyrjM)" alt="Placeholder photo héroïque : portrait studio noir et blanc d’un mannequin">
           <div class="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent"></div>
           <p data-template-id="hero-image-caption" class="canva-text absolute bottom-5 right-5 border px-3 py-2 text-[10px] uppercase tracking-[.17em]" style="background: rgba(9, 9, 9, 0.65); color: rgb(226, 201, 141); font-weight: 600; font-style: normal; font-size: 10px; letter-spacing: 0.12rem;">Image placeholder — à remplacer</p>
         </div>
@@ -211,30 +211,30 @@
         <!-- 6 PHOTOS PORTFOLIO -->
         <div class="grid grid-cols-2 gap-3 md:grid-cols-12 md:gap-5">
           <button type="button" class="portfolio-card focus-ring group relative col-span-2 overflow-hidden bg-neutral-900 md:col-span-7 md:row-span-2" data-gallery-index="0" aria-label="Ouvrir Editorial 01">
-            <img data-template-id="portfolio-image-1" loading="lazy" class="canva-image h-80 w-full object-cover grayscale md:h-full" src="https://images.pexels.com/photos/24972993/pexels-photo-24972993.jpeg" alt="Placeholder Editorial 01 : portrait noir et blanc d’un mannequin en studio">
+            <img data-template-id="portfolio-image-1" loading="lazy" class="canva-image h-80 w-full object-cover grayscale md:h-full" src="[https://images.pexels.com/photos/24972993/pexels-photo-24972993.jpeg](https://ibb.co/wZ64mHXq)" alt="Placeholder Editorial 01 : portrait bleu flou">
             <span class="absolute inset-x-0 bottom-0 flex items-end justify-between bg-gradient-to-t from-black/80 to-transparent p-5 text-left">
               <span data-template-id="portfolio-caption-1" class="canva-text editorial text-2xl italic" style="color: rgb(244, 240, 232); font-weight: 400; font-style: italic; font-size: 16px;">Editorial / 01</span>
               <i data-lucide="expand" aria-hidden="true" class="h-5 w-5 text-[#e2c98d]"></i>
             </span>
           </button>
           <button type="button" class="portfolio-card focus-ring group relative col-span-1 overflow-hidden bg-neutral-900 md:col-span-5" data-gallery-index="1" aria-label="Ouvrir Runway 02">
-            <img data-template-id="portfolio-image-2" loading="lazy" class="canva-image h-64 w-full object-cover grayscale md:h-80" src="https://images.pexels.com/photos/1655841/pexels-photo-1655841.jpeg" alt="Placeholder Runway 02 : mannequin défilant dans une robe élégante">
+            <img data-template-id="portfolio-image-2" loading="lazy" class="canva-image h-64 w-full object-cover grayscale md:h-80" src="[https://images.pexels.com/photos/1655841/pexels-photo-1655841.jpeg](https://ibb.co/zTcCFDs3)" alt="Placeholder Runway 02 : mannequin défilant dans une robe élégante">
             <span data-template-id="portfolio-caption-2" class="canva-text absolute bottom-4 left-4 editorial text-xl italic" style="color: rgb(244, 240, 232); font-weight: 400; font-style: italic; font-size: 16px;">Runway / 02</span>
           </button>
           <button type="button" class="portfolio-card focus-ring group relative col-span-1 overflow-hidden bg-neutral-900 md:col-span-5" data-gallery-index="2" aria-label="Ouvrir Beauty 03">
-            <img data-template-id="portfolio-image-3" loading="lazy" class="canva-image h-64 w-full object-cover grayscale md:h-80" src="https://images.pexels.com/photos/17566314/pexels-photo-17566314.jpeg" alt="Placeholder Beauty 03 : gros plan beauté avec maquillage élégant">
+            <img data-template-id="portfolio-image-3" loading="lazy" class="canva-image h-64 w-full object-cover grayscale md:h-80" src="[https://images.pexels.com/photos/17566314/pexels-photo-17566314.jpeg](https://ibb.co/RTqDxB47)" alt="Placeholder Beauty 03 : gros plan beauté avec maquillage élégant">
             <span data-template-id="portfolio-caption-3" class="canva-text absolute bottom-4 left-4 editorial text-xl italic" style="color: rgb(244, 240, 232); font-weight: 400; font-style: italic; font-size: 16px;">Beauty / 03</span>
           </button>
           <button type="button" class="portfolio-card focus-ring group relative col-span-1 overflow-hidden bg-neutral-900 md:col-span-4" data-gallery-index="3" aria-label="Ouvrir Campaign 04">
-            <img data-template-id="portfolio-image-4" loading="lazy" class="canva-image h-64 w-full object-cover grayscale md:h-96" src="https://images.pexels.com/photos/9150031/pexels-photo-9150031.jpeg" alt="Placeholder Campaign 04 : portrait studio d’une femme en veste argentée">
+            <img data-template-id="portfolio-image-4" loading="lazy" class="canva-image h-64 w-full object-cover grayscale md:h-96" src="[https://images.pexels.com/photos/9150031/pexels-photo-9150031.jpeg](https://ibb.co/PZqJZk1j)" alt="Placeholder Campaign 04 : portrait studio d’une femme en veste argentée">
             <span data-template-id="portfolio-caption-4" class="canva-text absolute bottom-4 left-4 editorial text-xl italic" style="color: rgb(244, 240, 232); font-weight: 400; font-style: italic; font-size: 16px;">Campaign / 04</span>
           </button>
           <button type="button" class="portfolio-card focus-ring group relative col-span-1 overflow-hidden bg-neutral-900 md:col-span-4" data-gallery-index="4" aria-label="Ouvrir Editorial 05">
-            <img data-template-id="portfolio-image-5" loading="lazy" class="canva-image h-64 w-full object-cover grayscale md:h-96" src="https://images.pexels.com/photos/4456616/pexels-photo-4456616.jpeg" alt="Placeholder Editorial 05 : portrait monochrome d’un mannequin dans une pose mode">
+            <img data-template-id="portfolio-image-5" loading="lazy" class="canva-image h-64 w-full object-cover grayscale md:h-96" src="[https://images.pexels.com/photos/4456616/pexels-photo-4456616.jpeg](https://ibb.co/5gjZR75t)" alt="Placeholder Editorial 05 : portrait monochrome d’un mannequin dans une pose mode">
             <span data-template-id="portfolio-caption-5" class="canva-text absolute bottom-4 left-4 editorial text-xl italic" style="color: rgb(244, 240, 232); font-weight: 400; font-style: italic; font-size: 16px;">Editorial / 05</span>
           </button>
           <button type="button" class="portfolio-card focus-ring group relative col-span-2 overflow-hidden bg-neutral-900 md:col-span-4" data-gallery-index="5" aria-label="Ouvrir Campaign 06">
-            <img data-template-id="portfolio-image-6" loading="lazy" class="canva-image h-64 w-full object-cover grayscale md:h-96" src="https://images.pexels.com/photos/11311327/pexels-photo-11311327.jpeg" alt="Placeholder Campaign 06 : mannequin posant devant une architecture en pierre">
+            <img data-template-id="portfolio-image-6" loading="lazy" class="canva-image h-64 w-full object-cover grayscale md:h-96" src="[https://images.pexels.com/photos/11311327/pexels-photo-11311327.jpeg](https://ibb.co/9Jmsw3v)" alt="Placeholder Campaign 06 : mannequin posant devant une architecture en pierre">
             <span data-template-id="portfolio-caption-6" class="canva-text absolute bottom-4 left-4 editorial text-xl italic" style="color: rgb(244, 240, 232); font-weight: 400; font-style: italic; font-size: 16px;">Campaign / 06</span>
           </button>
         </div>
@@ -260,22 +260,22 @@
 
         <div class="gallery-grid">
           <div class="gallery-item" data-gallery-src="https://images.pexels.com/photos/24972993/pexels-photo-24972993.jpeg">
-            <img src="https://images.pexels.com/photos/24972993/pexels-photo-24972993.jpeg" alt="Editorial 01">
+            <img src="[https://images.pexels.com/photos/24972993/pexels-photo-24972993.jpeg](https://ibb.co/wZ64mHXq)">
           </div>
           <div class="gallery-item" data-gallery-src="https://images.pexels.com/photos/1655841/pexels-photo-1655841.jpeg">
-            <img src="https://images.pexels.com/photos/1655841/pexels-photo-1655841.jpeg" alt="Runway 02">
+            <img src="[https://images.pexels.com/photos/1655841/pexels-photo-1655841.jpeg](https://ibb.co/zTcCFDs3)" alt="Runway 02">
           </div>
           <div class="gallery-item" data-gallery-src="https://images.pexels.com/photos/17566314/pexels-photo-17566314.jpeg">
-            <img src="https://images.pexels.com/photos/17566314/pexels-photo-17566314.jpeg" alt="Beauty 03">
+            <img src="[https://images.pexels.com/photos/17566314/pexels-photo-17566314.jpeg](https://ibb.co/RTqDxB47)">
           </div>
           <div class="gallery-item" data-gallery-src="https://images.pexels.com/photos/9150031/pexels-photo-9150031.jpeg">
-            <img src="https://images.pexels.com/photos/9150031/pexels-photo-9150031.jpeg" alt="Campaign 04">
+            <img src="[https://images.pexels.com/photos/9150031/pexels-photo-9150031.jpeg](https://ibb.co/PZqJZk1j)">
           </div>
           <div class="gallery-item" data-gallery-src="https://images.pexels.com/photos/4456616/pexels-photo-4456616.jpeg">
-            <img src="https://images.pexels.com/photos/4456616/pexels-photo-4456616.jpeg" alt="Editorial 05">
+            <img src="[https://images.pexels.com/photos/4456616/pexels-photo-4456616.jpeg](https://ibb.co/5gjZR75t)">
           </div>
           <div class="gallery-item" data-gallery-src="https://images.pexels.com/photos/11311327/pexels-photo-11311327.jpeg">
-            <img src="https://images.pexels.com/photos/11311327/pexels-photo-11311327.jpeg" alt="Campaign 06">
+            <img src="[https://images.pexels.com/photos/11311327/pexels-photo-11311327.jpeg](https://ibb.co/9Jmsw3v)" alt="Campaign 06">
           </div>
         </div>
       </div>
@@ -297,23 +297,23 @@
           <h2 data-template-id="about-title" class="canva-text editorial text-5xl italic md:text-6xl" style="color: rgb(244, 240, 232); font-weight: 400; font-style: italic; font-size: 24px;">À propos</h2>
         </div>
         <div class="lg:col-span-7">
-          <p data-template-id="about-copy" class="canva-text editorial max-w-2xl text-2xl leading-relaxed md:text-3xl" style="color: rgb(244, 240, 232); font-weight: 400; font-style: normal; font-size: 26px; line-height: 1.4;">Insérez ici une courte présentation du mannequin : univers, expérience, disponibilité et approche créative. Ce texte est entièrement personnalisable.</p>
+          <p data-template-id="about-copy" class="canva-text editorial max-w-2xl text-2xl leading-relaxed md:text-3xl" style="color: rgb(244, 240, 232); font-weight: 400; font-style: normal; font-size: 26px; line-height: 1.4;">Je m'appel CORDEL Noé, j'ai 19 ans, et je cherche à collaborer avec votre agence/marque ! Passioné par la photo, le sport (football, tennis, etc...) et l'écriture, je suis quelqu'un de curieux qui cherche constamment à apprendre.</p>
           <div class="mt-12 grid gap-x-10 gap-y-0 sm:grid-cols-2">
             <div class="border-t py-4">
-              <p data-template-id="profile-line-1-label" class="canva-text text-xs uppercase tracking-[.14em]" style="color: rgb(196, 160, 90); font-weight: 600; font-style: normal; font-size: 11px; letter-spacing: 0.12rem;">Base</p>
-              <p data-template-id="profile-line-1-value" class="canva-text mt-2" style="color: rgb(244, 240, 232); font-weight: 400; font-style: normal; font-size: 15px;">VILLE À REMPLACER</p>
+              <p data-template-id="profile-line-1-label" class="canva-text text-xs uppercase tracking-[.14em]" style="color: rgb(196, 160, 90); font-weight: 600; font-style: normal; font-size: 11px; letter-spacing: 0.12rem;">Location</p>
+              <p data-template-id="profile-line-1-value" class="canva-text mt-2" style="color: rgb(244, 240, 232); font-weight: 400; font-style: normal; font-size: 15px;">GRENOBLE</p>
             </div>
             <div class="border-t py-4">
               <p data-template-id="profile-line-2-label" class="canva-text text-xs uppercase tracking-[.14em]" style="color: rgb(196, 160, 90); font-weight: 600; font-style: normal; font-size: 11px; letter-spacing: 0.12rem;">Disponibilité</p>
-              <p data-template-id="profile-line-2-value" class="canva-text mt-2" style="color: rgb(244, 240, 232); font-weight: 400; font-style: normal; font-size: 15px;">À RENSEIGNER</p>
+              <p data-template-id="profile-line-2-value" class="canva-text mt-2" style="color: rgb(244, 240, 232); font-weight: 400; font-style: normal; font-size: 15px;">du Jeudi au Dimanche inclu</p>
             </div>
             <div class="border-t py-4">
               <p data-template-id="profile-line-3-label" class="canva-text text-xs uppercase tracking-[.14em]" style="color: rgb(196, 160, 90); font-weight: 600; font-style: normal; font-size: 11px; letter-spacing: 0.12rem;">Langues</p>
-              <p data-template-id="profile-line-3-value" class="canva-text mt-2" style="color: rgb(244, 240, 232); font-weight: 400; font-style: normal; font-size: 15px;">À RENSEIGNER</p>
+              <p data-template-id="profile-line-3-value" class="canva-text mt-2" style="color: rgb(244, 240, 232); font-weight: 400; font-style: normal; font-size: 15px;">Anglais, Français</p>
             </div>
             <div class="border-t py-4">
               <p data-template-id="profile-line-4-label" class="canva-text text-xs uppercase tracking-[.14em]" style="color: rgb(196, 160, 90); font-weight: 600; font-style: normal; font-size: 11px; letter-spacing: 0.12rem;">Représentation</p>
-              <p data-template-id="profile-line-4-value" class="canva-text mt-2" style="color: rgb(244, 240, 232); font-weight: 400; font-style: normal; font-size: 15px;">AGENCE À REMPLACER</p>
+              <p data-template-id="profile-line-4-value" class="canva-text mt-2" style="color: rgb(244, 240, 232); font-weight: 400; font-style: normal; font-size: 15px;">EN RECHERCHE DE MARQUE/AGENCE</p>
             </div>
           </div>
           <div data-template-id="measurements-panel" class="canva-panel mt-8 border p-6" style="background: rgb(20, 20, 20); color: rgb(244, 240, 232);">
