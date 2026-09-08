@@ -3,11 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio mannequin de Noé Cordel — éditorial, campagnes et collaborations." />
+  <meta
+    name="description"
+    content="Portfolio mannequin de Noé Cordel — éditorial, campagnes et collaborations."
+  />
+
   <title>NOÉ CORDEL | Portfolio Mannequin</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
     rel="stylesheet"
@@ -46,6 +51,11 @@
       overflow: hidden;
     }
 
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
     button,
     a {
       font: inherit;
@@ -53,11 +63,6 @@
 
     button {
       -webkit-tap-highlight-color: transparent;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
     }
 
     /* =========================
@@ -571,7 +576,7 @@
       padding: 23px;
       border: 1px solid var(--line);
       background: rgba(8, 8, 8, 0.38);
-      transition: border-color 0.25s ease, background 0.25s ease, transform 0.25s ease;
+      transition: 0.25s ease;
     }
 
     .contact-action:hover {
@@ -605,7 +610,7 @@
     }
 
     /* =========================
-       GRANDE GALERIE PLEIN ÉCRAN
+       GALERIE COMPLÈTE
     ========================= */
 
     .gallery-modal {
@@ -707,7 +712,7 @@
       height: 100%;
       object-fit: cover;
       filter: grayscale(45%);
-      transition: transform 0.4s ease, filter 0.35s ease;
+      transition: 0.4s ease;
     }
 
     .album-item:hover img {
@@ -727,28 +732,8 @@
       text-transform: uppercase;
     }
 
-    .album-item::after {
-      position: absolute;
-      right: 12px;
-      bottom: 12px;
-      padding: 6px 8px;
-      content: "Agrandir";
-      opacity: 0;
-      color: var(--gold-light);
-      border: 1px solid rgba(214, 174, 85, 0.65);
-      background: rgba(8, 8, 8, 0.72);
-      font: 0.54rem "DM Mono", monospace;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      transition: 0.25s ease;
-    }
-
-    .album-item:hover::after {
-      opacity: 1;
-    }
-
     /* =========================
-       LIGHTBOX IMAGE
+       LIGHTBOX
     ========================= */
 
     .lightbox {
@@ -807,7 +792,7 @@
     }
 
     /* =========================
-       MOBILE
+       RESPONSIVE
     ========================= */
 
     @media (max-width: 900px) {
@@ -919,7 +904,9 @@
 
 <body>
   <header class="topbar">
-    <a class="brand" href="#accueil">NOÉ <span>/</span> PORTFOLIO</a>
+    <a class="brand" href="#accueil">
+      NOÉ <span>/</span> PORTFOLIO
+    </a>
 
     <button
       class="menu-toggle"
@@ -969,8 +956,14 @@
           </p>
 
           <div class="contact-links">
-            <a href="mailto:noe.cordel@gmail.com">noe.cordel@gmail.com</a>
-            <a href="tel:+33781854503">+33 7 81 85 45 03</a>
+            <a href="mailto:noe.cordel@gmail.com">
+              noe.cordel@gmail.com
+            </a>
+
+            <a href="tel:+33781854503">
+              +33 7 81 85 45 03
+            </a>
+
             <a
               href="https://www.instagram.com/noe.crdl/?__pwa=1"
               target="_blank"
@@ -982,7 +975,9 @@
         </div>
       </div>
 
-      <span class="scroll-cue">Défiler pour explorer</span>
+      <span class="scroll-cue">
+        Défiler pour explorer
+      </span>
     </section>
 
     <section class="gallery-section" id="selection">
@@ -1005,7 +1000,9 @@
             galerie complète
           </span>
 
-          <span class="view-all-arrow" aria-hidden="true">↗</span>
+          <span class="view-all-arrow">
+            ↗
+          </span>
         </a>
       </div>
     </section>
@@ -1025,7 +1022,7 @@
           <strong>présence singulière</strong>, naturelle et mémorable.
         </p>
 
-        <div class="description-tags" aria-label="Domaines de collaboration">
+        <div class="description-tags">
           <span>Éditorial</span>
           <span>Campagne</span>
           <span>E-commerce</span>
@@ -1070,20 +1067,28 @@
       </div>
 
       <div class="contact-actions">
-        <a class="contact-action" href="mailto:noe.cordel@gmail.com">
+        <a
+          class="contact-action"
+          href="mailto:noe.cordel@gmail.com"
+        >
           <div>
             <small>E-mail</small>
             <span>noe.cordel@gmail.com</span>
           </div>
-          <b aria-hidden="true">↗</b>
+
+          <b>↗</b>
         </a>
 
-        <a class="contact-action" href="tel:+33781854503">
+        <a
+          class="contact-action"
+          href="tel:+33781854503"
+        >
           <div>
             <small>Téléphone</small>
             <span>+33 7 81 85 45 03</span>
           </div>
-          <b aria-hidden="true">↗</b>
+
+          <b>↗</b>
         </a>
 
         <a
@@ -1096,13 +1101,13 @@
             <small>Instagram</small>
             <span>@noe.crdl</span>
           </div>
-          <b aria-hidden="true">↗</b>
+
+          <b>↗</b>
         </a>
       </div>
     </section>
   </main>
 
-  <!-- GRANDE GALERIE MODALE -->
   <div
     class="gallery-modal"
     id="galleryModal"
@@ -1130,7 +1135,6 @@
     </div>
   </div>
 
-  <!-- IMAGE AGRANDIE -->
   <div
     class="lightbox"
     id="lightbox"
@@ -1159,68 +1163,94 @@
     const photos = [
       {
         src: "https://i.ibb.co/q3jM999p/DSF0121.png",
-        title: "Cliché 01"
+        title: "Éditorial 01"
       },
       {
         src: "https://i.ibb.co/LXpT8dKp/IMG-20260531-WA0014.jpg",
-        title: "Cliché 02"
+        title: "Portrait 02"
       },
       {
         src: "https://i.ibb.co/zVNFcpfK/IMG-4765.jpg",
-        title: "Cliché 03"
+        title: "Studio 03"
       },
       {
         src: "https://i.ibb.co/7tBp1fbt/IMG-20260723-223822.png",
-        title: "Cliché 04"
+        title: "Mode 04"
       },
       {
         src: "https://i.ibb.co/RWTgzGg/IMG-4739.jpg",
-        title: "Cliché 05"
+        title: "Campagne 05"
       },
       {
         src: "https://i.ibb.co/FLrNdVkM/DSC05702.jpg",
-        title: "Cliché 06"
+        title: "Éditorial 06"
       },
       {
         src: "https://i.ibb.co/sJbk0zb7/DSC05153.jpg",
-        title: "Cliché 07"
+        title: "Portrait 07"
       },
       {
         src: "https://i.ibb.co/Wp6hbRXQ/DSC04877.jpg",
-        title: "Cliché 08"
+        title: "Studio 08"
       },
       {
         src: "https://i.ibb.co/BVLntBZQ/DSC05099.jpg",
-        title: "Cliché 09"
+        title: "Mode 09"
       }
     ];
 
-    const previewGallery = document.getElementById("previewGallery");
-    const albumGrid = document.getElementById("albumGrid");
-    const galleryModal = document.getElementById("galleryModal");
+    const previewGallery =
+      document.getElementById("previewGallery");
 
-    const menuToggle = document.getElementById("menuToggle");
-    const navPanel = document.getElementById("navPanel");
-    const navGallery = document.getElementById("navGallery");
+    const albumGrid =
+      document.getElementById("albumGrid");
 
-    const viewAllGallery = document.getElementById("viewAllGallery");
-    const closeGalleryButton = document.getElementById("closeGallery");
+    const galleryModal =
+      document.getElementById("galleryModal");
 
-    const lightbox = document.getElementById("lightbox");
-    const lightboxImage = document.getElementById("lightboxImage");
-    const lightboxCaption = document.getElementById("lightboxCaption");
-    const closeLightboxButton = document.getElementById("closeLightbox");
+    const menuToggle =
+      document.getElementById("menuToggle");
+
+    const navPanel =
+      document.getElementById("navPanel");
+
+    const navGallery =
+      document.getElementById("navGallery");
+
+    const viewAllGallery =
+      document.getElementById("viewAllGallery");
+
+    const closeGalleryButton =
+      document.getElementById("closeGallery");
+
+    const lightbox =
+      document.getElementById("lightbox");
+
+    const lightboxImage =
+      document.getElementById("lightboxImage");
+
+    const lightboxCaption =
+      document.getElementById("lightboxCaption");
+
+    const closeLightboxButton =
+      document.getElementById("closeLightbox");
 
     function createPhotoButton(photo, className = "") {
       const button = document.createElement("button");
 
-      button.className = className;
       button.type = "button";
+      button.className = className;
 
-      button.innerHTML = `
-        <img src="${photo.src}" alt="${photo.title}" loading="lazy">
-        <span>${photo.title}</span>
-      `;
+      const image = document.createElement("img");
+      image.src = photo.src;
+      image.alt = photo.title;
+      image.loading = "lazy";
+
+      const title = document.createElement("span");
+      title.textContent = photo.title;
+
+      button.appendChild(image);
+      button.appendChild(title);
 
       button.addEventListener("click", () => {
         openLightbox(photo);
@@ -1229,25 +1259,22 @@
       return button;
     }
 
-    /*
-      Les deux photos de l'aperçu sont ajoutées sous la carte de galerie.
-    */
-    photos
-      .slice(0, 2)
-      .forEach((photo) => {
-        previewGallery.appendChild(createPhotoButton(photo));
-      });
+    // Les deux images apparaissent verticalement dans l'aperçu.
+    photos.slice(0, 2).forEach((photo) => {
+      previewGallery.appendChild(createPhotoButton(photo));
+    });
 
-    /*
-      Toutes les photos sont ajoutées dans la grande galerie.
-    */
+    // Toutes les images apparaissent dans la galerie complète.
     photos.forEach((photo) => {
       albumGrid.appendChild(createPhotoButton(photo, "album-item"));
     });
 
     function setMenu(isOpen) {
       navPanel.classList.toggle("open", isOpen);
-      menuToggle.setAttribute("aria-expanded", String(isOpen));
+      menuToggle.setAttribute(
+        "aria-expanded",
+        String(isOpen)
+      );
     }
 
     function setGallery(isOpen) {
@@ -1276,10 +1303,6 @@
     function closeLightbox() {
       lightbox.classList.remove("open");
 
-      /*
-        On enlève le no-scroll seulement si la galerie complète
-        n'est pas encore ouverte derrière l'image.
-      */
       if (!galleryModal.classList.contains("open")) {
         document.body.classList.remove("no-scroll");
       }
@@ -1302,17 +1325,16 @@
       setGallery(false);
     });
 
-    /*
-      Ferme la galerie si l'utilisateur clique sur le fond autour
-      de la grande fenêtre de galerie.
-    */
     galleryModal.addEventListener("click", (event) => {
       if (event.target === galleryModal) {
         setGallery(false);
       }
     });
 
-    closeLightboxButton.addEventListener("click", closeLightbox);
+    closeLightboxButton.addEventListener(
+      "click",
+      closeLightbox
+    );
 
     lightbox.addEventListener("click", (event) => {
       if (event.target === lightbox) {
