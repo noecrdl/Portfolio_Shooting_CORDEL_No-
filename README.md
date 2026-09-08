@@ -462,15 +462,15 @@
     <section class="hero" id="accueil">
       <img class="hero-image" src="https://i.ibb.co/q3jM999p/DSF0121.png" alt="Noé Cordel — portrait principal" />
       <div class="hero-content">
-        <p class="eyebrow">Mannequin · Éditorial · France</p>
+        <p class="eyebrow">Mannequin · France</p>
         <h1>NOÉ <em>CORDEL</em></h1>
         <div class="hero-bottom">
-          <p class="intro">Un regard contemporain, une présence affirmée. Disponible pour campagnes, éditoriaux, e-commerce et collaborations créatives.</p>
+          <p class="intro">Un regard contemporain, une présence affirmée. Disponible pour campagnes publicitaires, éditoriaux, e-commerce et collaborations créatives.</p>
           <div class="contact-links">
             <!-- Remplace ces coordonnées par les tiennes -->
-            <a href="mailto:contact@noecordel.fr">contact@noecordel.fr</a>
-            <a href="tel:+33600000000">+33 6 00 00 00 00</a>
-            <a href="https://instagram.com/" target="_blank" rel="noreferrer">Instagram ↗</a>
+            <a href="mailto:contact@noecordel.fr">noe.cordel@gmail.com</a>
+            <a href="tel:+33600000000">+33 7 81 85 45 03</a>
+            <a href="https://www.instagram.com/noe.crdl/?__pwa=1" target="_blank" rel="noreferrer">Instagram ↗</a>
           </div>
         </div>
       </div>
@@ -480,7 +480,7 @@
     <section class="gallery-section" id="selection">
       <div class="section-heading">
         <h2>En lumière.</h2>
-        <p>Une sélection de portraits et d'éditoriaux. Clique sur une image pour l'afficher en grand format.</p>
+        <p>Sélectionnez une image pour l’agrandir.</p>
       </div>
       <div class="gallery-preview" id="previewGallery">
         <a class="view-all-card" href="#" id="viewAllGallery" aria-label="Ouvrir la galerie complète">
@@ -503,7 +503,6 @@
           <span>Éditorial</span>
           <span>Campagne</span>
           <span>E-commerce</span>
-          <span>Beauté</span>
           <span>Création de contenu</span>
         </div>
       </div>
@@ -512,9 +511,9 @@
     <section class="details" id="infos">
       <div class="details-box">
         <div><span class="detail-label">Disponibilité</span><span class="detail-value">France · International</span></div>
-        <div><span class="detail-label">Taille</span><span class="detail-value">À compléter</span></div>
+        <div><span class="detail-label">Taille</span><span class="detail-value">1m75</span></div>
         <div><span class="detail-label">Mensurations</span><span class="detail-value">À compléter</span></div>
-        <div><span class="detail-label">Pointure</span><span class="detail-value">À compléter</span></div>
+        <div><span class="detail-label">Pointure</span><span class="detail-value">42</span></div>
       </div>
     </section>
 
@@ -522,7 +521,7 @@
       <div class="contact-heading">
         <p class="eyebrow">Travaillons ensemble</p>
         <h2>Entrons en contact.</h2>
-        <p>Pour une campagne, un éditorial, une collaboration ou toute demande professionnelle, utilise le canal qui te convient le mieux.</p>
+        <p>Pour une campagne, un éditorial, une collaboration ou toute demande professionnelle, utilisez le canal qui vous convient le mieux.</p>
       </div>
       <div class="contact-actions">
         <!-- Remplace email, téléphone et lien Instagram ci-dessous par tes coordonnées. -->
@@ -530,12 +529,12 @@
           <div><small>E-mail</small><span>contact@noecordel.fr</span></div>
           <b aria-hidden="true">↗</b>
         </a>
-        <a class="contact-action" href="tel:+33600000000">
-          <div><small>Téléphone</small><span>+33 6 00 00 00 00</span></div>
+        <a class="contact-action" href="tel:+33781854503">
+          <div><small>Téléphone</small><span>+33 7 81 85 45 03</span></div>
           <b aria-hidden="true">↗</b>
         </a>
-        <a class="contact-action" href="https://instagram.com/" target="_blank" rel="noreferrer">
-          <div><small>Instagram</small><span>@ton.compte</span></div>
+        <a class="contact-action" href="https://www.instagram.com/noe.crdl/?__pwa=1" target="_blank" rel="noreferrer">
+          <div><small>Instagram</small><span>@noe.crdl</span></div>
           <b aria-hidden="true">↗</b>
         </a>
       </div>
