@@ -60,9 +60,9 @@
       text-decoration: none;
     }
 
-    /* ------------------------------ */
-    /* BARRE DE NAVIGATION */
-    /* ------------------------------ */
+    /* =========================
+       NAVIGATION
+    ========================= */
 
     .topbar {
       position: fixed;
@@ -125,9 +125,59 @@
       background: currentColor;
     }
 
-    /* ------------------------------ */
-    /* HERO */
-    /* ------------------------------ */
+    .nav-panel {
+      position: fixed;
+      z-index: 50;
+      top: 82px;
+      right: 5.5vw;
+      width: min(300px, calc(100vw - 11vw));
+      padding: 11px;
+      visibility: hidden;
+      opacity: 0;
+      transform: translateY(-12px);
+      border: 1px solid rgba(214, 174, 85, 0.48);
+      background: rgba(13, 13, 13, 0.98);
+      box-shadow: 0 15px 50px rgba(0, 0, 0, 0.45);
+      transition: 0.25s ease;
+    }
+
+    .nav-panel.open {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .nav-panel a,
+    .nav-panel button {
+      display: flex;
+      width: 100%;
+      padding: 14px 12px;
+      cursor: pointer;
+      text-align: left;
+      color: var(--white);
+      border: 0;
+      border-bottom: 1px solid var(--line);
+      background: transparent;
+      font: 0.72rem "DM Mono", monospace;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      transition: 0.2s ease;
+    }
+
+    .nav-panel > :last-child {
+      border-bottom: 0;
+    }
+
+    .nav-panel a:hover,
+    .nav-panel button:hover {
+      padding-left: 18px;
+      color: var(--gold-light);
+      background: rgba(214, 174, 85, 0.08);
+    }
+
+    /* =========================
+       HERO
+    ========================= */
 
     .hero {
       position: relative;
@@ -261,9 +311,9 @@
       writing-mode: vertical-rl;
     }
 
-    /* ------------------------------ */
-    /* GALERIE */
-    /* ------------------------------ */
+    /* =========================
+       GALERIE D'APERÇU
+    ========================= */
 
     .gallery-section {
       padding: 120px 5.5vw;
@@ -292,11 +342,6 @@
       font-size: 0.85rem;
       line-height: 1.6;
     }
-
-    /*
-      MODIFICATION PRINCIPALE :
-      Les trois cartes de la galerie sont empilées verticalement.
-    */
 
     .gallery-preview {
       display: flex;
@@ -387,9 +432,9 @@
       line-height: 1;
     }
 
-    /* ------------------------------ */
-    /* À PROPOS */
-    /* ------------------------------ */
+    /* =========================
+       À PROPOS
+    ========================= */
 
     .description-section {
       display: grid;
@@ -436,9 +481,9 @@
       text-transform: uppercase;
     }
 
-    /* ------------------------------ */
-    /* INFORMATIONS */
-    /* ------------------------------ */
+    /* =========================
+       INFORMATIONS
+    ========================= */
 
     .details {
       padding: 0 5.5vw 120px;
@@ -466,9 +511,9 @@
       font-size: 0.85rem;
     }
 
-    /* ------------------------------ */
-    /* CONTACT */
-    /* ------------------------------ */
+    /* =========================
+       CONTACT
+    ========================= */
 
     .contact-section {
       position: relative;
@@ -559,57 +604,95 @@
       font-weight: 400;
     }
 
-    /* ------------------------------ */
-    /* PANNEAUX */
-    /* ------------------------------ */
+    /* =========================
+       GRANDE GALERIE PLEIN ÉCRAN
+    ========================= */
 
-    .side-panel {
+    .gallery-modal {
       position: fixed;
-      z-index: 40;
-      inset: 0 auto 0 0;
-      width: min(460px, 92vw);
-      padding: 27px 24px 36px;
-      overflow-y: auto;
-      transform: translateX(-102%);
-      border-right: 1px solid rgba(214, 174, 85, 0.35);
-      background: var(--deep);
-      transition: transform 0.45s cubic-bezier(0.77, 0, 0.18, 1);
-    }
-
-    .side-panel.open {
-      transform: translateX(0);
-    }
-
-    .side-panel-header {
+      z-index: 70;
+      inset: 0;
       display: flex;
+      visibility: hidden;
+      align-items: center;
+      justify-content: center;
+      padding: 4vh 4vw;
+      opacity: 0;
+      background: rgba(0, 0, 0, 0.82);
+      backdrop-filter: blur(8px);
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .gallery-modal.open {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .gallery-modal-content {
+      display: flex;
+      flex-direction: column;
+      width: min(1400px, 92vw);
+      height: min(880px, 90vh);
+      overflow: hidden;
+      border: 1px solid rgba(214, 174, 85, 0.45);
+      background: var(--deep);
+      box-shadow: 0 25px 90px rgba(0, 0, 0, 0.7);
+    }
+
+    .gallery-modal-header {
+      display: flex;
+      flex-shrink: 0;
+      gap: 25px;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 34px;
+      padding: 26px 32px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(18, 18, 18, 0.98);
     }
 
-    .side-panel h2 {
+    .gallery-modal-header .eyebrow {
+      margin-bottom: 10px;
+    }
+
+    .gallery-modal-header h2 {
       margin: 0;
-      font: 600 2.25rem "Playfair Display", serif;
+      font: 600 clamp(2rem, 4vw, 3.5rem) / 0.95 "Playfair Display", serif;
+      letter-spacing: -0.04em;
     }
 
-    .close-panel {
+    .gallery-close {
+      display: grid;
+      flex-shrink: 0;
+      width: 48px;
+      height: 48px;
       cursor: pointer;
       color: var(--white);
-      border: 0;
+      border: 1px solid var(--line);
       background: transparent;
-      font-size: 1.8rem;
-      line-height: 1;
+      font: 1.8rem/1 "DM Mono", monospace;
+      place-items: center;
+      transition: 0.25s ease;
+    }
+
+    .gallery-close:hover {
+      color: var(--gold-light);
+      border-color: var(--gold);
+      background: rgba(214, 174, 85, 0.08);
     }
 
     .album-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 11px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      flex: 1;
+      padding: 24px 32px 32px;
+      overflow-y: auto;
+      background: #0a0a0a;
     }
 
     .album-item {
       position: relative;
-      min-height: 210px;
+      min-height: 280px;
       padding: 0;
       overflow: hidden;
       cursor: pointer;
@@ -619,102 +702,58 @@
     }
 
     .album-item img {
+      display: block;
       width: 100%;
       height: 100%;
       object-fit: cover;
-      filter: grayscale(55%);
-      transition: 0.35s;
+      filter: grayscale(45%);
+      transition: transform 0.4s ease, filter 0.35s ease;
     }
 
     .album-item:hover img {
       filter: grayscale(0);
-      transform: scale(1.04);
+      transform: scale(1.05);
     }
 
     .album-item span {
       position: absolute;
-      bottom: 10px;
-      left: 10px;
-      padding: 5px 7px;
+      bottom: 12px;
+      left: 12px;
+      padding: 6px 8px;
       color: var(--gold-light);
-      background: rgba(8, 8, 8, 0.7);
+      background: rgba(8, 8, 8, 0.76);
       font: 0.56rem "DM Mono", monospace;
       letter-spacing: 0.1em;
       text-transform: uppercase;
     }
 
-    .overlay {
-      position: fixed;
-      z-index: 35;
-      inset: 0;
-      visibility: hidden;
+    .album-item::after {
+      position: absolute;
+      right: 12px;
+      bottom: 12px;
+      padding: 6px 8px;
+      content: "Agrandir";
       opacity: 0;
-      background: rgba(0, 0, 0, 0.62);
-      transition: 0.3s;
-    }
-
-    .overlay.visible {
-      visibility: visible;
-      opacity: 1;
-    }
-
-    .nav-panel {
-      position: fixed;
-      z-index: 50;
-      top: 82px;
-      right: 5.5vw;
-      width: min(300px, calc(100vw - 11vw));
-      padding: 11px;
-      visibility: hidden;
-      opacity: 0;
-      transform: translateY(-12px);
-      border: 1px solid rgba(214, 174, 85, 0.48);
-      background: rgba(13, 13, 13, 0.98);
-      box-shadow: 0 15px 50px rgba(0, 0, 0, 0.45);
+      color: var(--gold-light);
+      border: 1px solid rgba(214, 174, 85, 0.65);
+      background: rgba(8, 8, 8, 0.72);
+      font: 0.54rem "DM Mono", monospace;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
       transition: 0.25s ease;
     }
 
-    .nav-panel.open {
-      visibility: visible;
+    .album-item:hover::after {
       opacity: 1;
-      transform: translateY(0);
     }
 
-    .nav-panel a,
-    .nav-panel button {
-      display: flex;
-      width: 100%;
-      padding: 14px 12px;
-      cursor: pointer;
-      text-align: left;
-      color: var(--white);
-      border: 0;
-      border-bottom: 1px solid var(--line);
-      background: transparent;
-      font: 0.72rem "DM Mono", monospace;
-      letter-spacing: 0.09em;
-      text-transform: uppercase;
-      transition: 0.2s ease;
-    }
-
-    .nav-panel > :last-child {
-      border-bottom: 0;
-    }
-
-    .nav-panel a:hover,
-    .nav-panel button:hover {
-      padding-left: 18px;
-      color: var(--gold-light);
-      background: rgba(214, 174, 85, 0.08);
-    }
-
-    /* ------------------------------ */
-    /* LIGHTBOX */
-    /* ------------------------------ */
+    /* =========================
+       LIGHTBOX IMAGE
+    ========================= */
 
     .lightbox {
       position: fixed;
-      z-index: 60;
+      z-index: 90;
       inset: 0;
       display: grid;
       visibility: hidden;
@@ -767,9 +806,19 @@
       letter-spacing: 0.06em;
     }
 
-    /* ------------------------------ */
-    /* VERSION MOBILE */
-    /* ------------------------------ */
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media (max-width: 900px) {
+      .album-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .album-item {
+        min-height: 240px;
+      }
+    }
 
     @media (max-width: 700px) {
       .hero {
@@ -834,6 +883,30 @@
 
       .contact-action {
         min-height: 95px;
+      }
+
+      .gallery-modal {
+        padding: 0;
+      }
+
+      .gallery-modal-content {
+        width: 100vw;
+        height: 100svh;
+        border: 0;
+      }
+
+      .gallery-modal-header {
+        padding: 22px 20px;
+      }
+
+      .album-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 20px;
+      }
+
+      .album-item {
+        min-height: 310px;
       }
 
       footer {
@@ -1029,27 +1102,35 @@
     </section>
   </main>
 
-  <aside class="side-panel" id="sidePanel" aria-label="Galerie complète">
-    <div class="side-panel-header">
-      <div>
-        <p class="eyebrow">Archives visuelles</p>
-        <h2>Galerie</h2>
+  <!-- GRANDE GALERIE MODALE -->
+  <div
+    class="gallery-modal"
+    id="galleryModal"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Galerie complète"
+  >
+    <div class="gallery-modal-content">
+      <div class="gallery-modal-header">
+        <div>
+          <p class="eyebrow">Archives visuelles</p>
+          <h2>Galerie complète.</h2>
+        </div>
+
+        <button
+          class="gallery-close"
+          id="closeGallery"
+          aria-label="Fermer la galerie"
+        >
+          ×
+        </button>
       </div>
 
-      <button
-        class="close-panel"
-        id="closeGallery"
-        aria-label="Fermer la galerie"
-      >
-        ×
-      </button>
+      <div class="album-grid" id="albumGrid"></div>
     </div>
+  </div>
 
-    <div class="album-grid" id="albumGrid"></div>
-  </aside>
-
-  <div class="overlay" id="overlay"></div>
-
+  <!-- IMAGE AGRANDIE -->
   <div
     class="lightbox"
     id="lightbox"
@@ -1116,13 +1197,15 @@
 
     const previewGallery = document.getElementById("previewGallery");
     const albumGrid = document.getElementById("albumGrid");
-    const sidePanel = document.getElementById("sidePanel");
-    const overlay = document.getElementById("overlay");
+    const galleryModal = document.getElementById("galleryModal");
+
     const menuToggle = document.getElementById("menuToggle");
     const navPanel = document.getElementById("navPanel");
     const navGallery = document.getElementById("navGallery");
+
     const viewAllGallery = document.getElementById("viewAllGallery");
     const closeGalleryButton = document.getElementById("closeGallery");
+
     const lightbox = document.getElementById("lightbox");
     const lightboxImage = document.getElementById("lightboxImage");
     const lightboxCaption = document.getElementById("lightboxCaption");
@@ -1139,20 +1222,25 @@
         <span>${photo.title}</span>
       `;
 
-      button.addEventListener("click", () => openLightbox(photo));
+      button.addEventListener("click", () => {
+        openLightbox(photo);
+      });
 
       return button;
     }
 
     /*
-      Les deux photos sont ajoutées après la carte "Explorer la galerie".
-      Avec le CSS display:flex + flex-direction:column,
-      les trois éléments seront les uns sous les autres.
+      Les deux photos de l'aperçu sont ajoutées sous la carte de galerie.
     */
     photos
       .slice(0, 2)
-      .forEach((photo) => previewGallery.appendChild(createPhotoButton(photo)));
+      .forEach((photo) => {
+        previewGallery.appendChild(createPhotoButton(photo));
+      });
 
+    /*
+      Toutes les photos sont ajoutées dans la grande galerie.
+    */
     photos.forEach((photo) => {
       albumGrid.appendChild(createPhotoButton(photo, "album-item"));
     });
@@ -1163,8 +1251,7 @@
     }
 
     function setGallery(isOpen) {
-      sidePanel.classList.toggle("open", isOpen);
-      overlay.classList.toggle("visible", isOpen);
+      galleryModal.classList.toggle("open", isOpen);
       document.body.classList.toggle("no-scroll", isOpen);
     }
 
@@ -1183,13 +1270,19 @@
       lightboxCaption.textContent = photo.title;
 
       lightbox.classList.add("open");
-      setGallery(false);
       document.body.classList.add("no-scroll");
     }
 
     function closeLightbox() {
       lightbox.classList.remove("open");
-      document.body.classList.remove("no-scroll");
+
+      /*
+        On enlève le no-scroll seulement si la galerie complète
+        n'est pas encore ouverte derrière l'image.
+      */
+      if (!galleryModal.classList.contains("open")) {
+        document.body.classList.remove("no-scroll");
+      }
     }
 
     menuToggle.addEventListener("click", () => {
@@ -1209,8 +1302,14 @@
       setGallery(false);
     });
 
-    overlay.addEventListener("click", () => {
-      setGallery(false);
+    /*
+      Ferme la galerie si l'utilisateur clique sur le fond autour
+      de la grande fenêtre de galerie.
+    */
+    galleryModal.addEventListener("click", (event) => {
+      if (event.target === galleryModal) {
+        setGallery(false);
+      }
     });
 
     closeLightboxButton.addEventListener("click", closeLightbox);
