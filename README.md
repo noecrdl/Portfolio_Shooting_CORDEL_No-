@@ -484,7 +484,7 @@
       </div>
       <div class="gallery-preview" id="previewGallery">
         <a class="view-all-card" href="#" id="viewAllGallery" aria-label="Ouvrir la galerie complète">
-          <span class="view-all-number">09</span>
+          <span class="view-all-number">2026</span>
           <span class="view-all-label">Explorer la<br>galerie complète</span>
           <span class="view-all-arrow" aria-hidden="true">↗</span>
         </a>
