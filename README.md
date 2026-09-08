@@ -190,7 +190,7 @@
           </dl>
         </div>
         <div class="hero-photo relative overflow-hidden bg-neutral-900 lg:col-span-7 lg:h-[calc(100*min(var(--vh,1vh),1vh)-9rem)]">
-          <img data-template-id="hero-image" loading="lazy" class="canva-image h-[58vh] w-full object-cover object-center lg:h-full" src="[https://images.pexels.com/photos/13660182/pexels-photo-13660182.jpeg](https://ibb.co/Q7XTyrjM)" alt="Placeholder photo héroïque : portrait studio noir et blanc d’un mannequin">
+          <img data-template-id="hero-image" loading="lazy" class="canva-image h-[58vh] w-full object-cover object-center lg:h-full" src="https://ibb.co/sr9gypg" alt="Placeholder photo héroïque : portrait studio noir et blanc d’un mannequin">
           <div class="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent"></div>
           <p data-template-id="hero-image-caption" class="canva-text absolute bottom-5 right-5 border px-3 py-2 text-[10px] uppercase tracking-[.17em]" style="background: rgba(9, 9, 9, 0.65); color: rgb(226, 201, 141); font-weight: 600; font-style: normal; font-size: 10px; letter-spacing: 0.12rem;">Image placeholder — à remplacer</p>
         </div>
