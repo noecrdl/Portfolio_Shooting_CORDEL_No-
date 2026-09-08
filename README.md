@@ -302,4 +302,359 @@
     .contact-action:hover { border-color: var(--gold); background: rgba(214, 174, 85, 0.08); transform: translateY(-4px); }
     .contact-action small { display: block; margin-bottom: 8px; color: var(--gold-light); font: 0.58rem "DM Mono", monospace; letter-spacing: 0.13em; text-transform: uppercase; }
     .contact-action span { display: block; overflow: hidden; font-size: clamp(0.75rem, 1.4vw, 0.95rem); font-weight: 600; text-overflow: ellipsis; white-space: nowrap; }
-    .contact-action b { color: var(-
+    .contact-action b { color: var(--gold-light); font-size: 1.4rem; font-weight: 400; }
+
+    .side-panel {
+      position: fixed;
+      z-index: 40;
+      inset: 0 auto 0 0;
+      width: min(460px, 92vw);
+      padding: 27px 24px 36px;
+      overflow-y: auto;
+      transform: translateX(-102%);
+      border-right: 1px solid rgba(214, 174, 85, 0.35);
+      background: var(--deep);
+      transition: transform 0.45s cubic-bezier(0.77, 0, 0.18, 1);
+    }
+    .side-panel.open { transform: translateX(0); }
+    .side-panel-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 34px; }
+    .side-panel h2 { margin: 0; font: 600 2.25rem "Playfair Display", serif; }
+    .close-panel { cursor: pointer; color: var(--white); border: 0; background: transparent; font-size: 1.8rem; line-height: 1; }
+    .album-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 11px; }
+    .album-item {
+      position: relative;
+      min-height: 210px;
+      padding: 0;
+      overflow: hidden;
+      cursor: pointer;
+      text-align: left;
+      border: 0;
+      background: #1d1d1d;
+    }
+    .album-item img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(55%); transition: 0.35s; }
+    .album-item:hover img { filter: grayscale(0); transform: scale(1.04); }
+    .album-item span {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      padding: 5px 7px;
+      color: var(--gold-light);
+      background: rgba(8, 8, 8, 0.7);
+      font: 0.56rem "DM Mono", monospace;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    .overlay {
+      position: fixed;
+      z-index: 35;
+      inset: 0;
+      visibility: hidden;
+      opacity: 0;
+      background: rgba(0, 0, 0, 0.62);
+      transition: 0.3s;
+    }
+    .overlay.visible { visibility: visible; opacity: 1; }
+
+    .nav-panel {
+      position: fixed;
+      z-index: 50;
+      top: 82px;
+      right: 5.5vw;
+      width: min(300px, calc(100vw - 11vw));
+      padding: 11px;
+      visibility: hidden;
+      opacity: 0;
+      transform: translateY(-12px);
+      border: 1px solid rgba(214, 174, 85, 0.48);
+      background: rgba(13, 13, 13, 0.98);
+      box-shadow: 0 15px 50px rgba(0, 0, 0, 0.45);
+      transition: 0.25s ease;
+    }
+    .nav-panel.open { visibility: visible; opacity: 1; transform: translateY(0); }
+    .nav-panel a,
+    .nav-panel button {
+      display: flex;
+      width: 100%;
+      padding: 14px 12px;
+      cursor: pointer;
+      text-align: left;
+      color: var(--white);
+      border: 0;
+      border-bottom: 1px solid var(--line);
+      background: transparent;
+      font: 0.72rem "DM Mono", monospace;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      transition: 0.2s ease;
+    }
+    .nav-panel > :last-child { border-bottom: 0; }
+    .nav-panel a:hover,
+    .nav-panel button:hover { padding-left: 18px; color: var(--gold-light); background: rgba(214, 174, 85, 0.08); }
+
+    .lightbox {
+      position: fixed;
+      z-index: 60;
+      inset: 0;
+      display: grid;
+      visibility: hidden;
+      place-items: center;
+      padding: 28px;
+      opacity: 0;
+      background: rgba(0, 0, 0, 0.94);
+      transition: 0.25s;
+    }
+    .lightbox.open { visibility: visible; opacity: 1; }
+    .lightbox img { max-width: min(100%, 1100px); max-height: 82vh; object-fit: contain; box-shadow: 0 0 80px rgba(214, 174, 85, 0.13); }
+    .lightbox-close {
+      position: absolute;
+      top: 26px;
+      right: 5vw;
+      cursor: pointer;
+      color: var(--white);
+      border: 0;
+      background: transparent;
+      font: 1.7rem "DM Mono", monospace;
+    }
+    .lightbox-caption { position: absolute; bottom: 25px; color: var(--gold-light); font: 0.65rem "DM Mono", monospace; letter-spacing: 0.12em; text-transform: uppercase; }
+    footer { display: flex; justify-content: space-between; padding: 26px 5.5vw; color: var(--muted); border-top: 1px solid var(--line); font: 0.62rem "DM Mono", monospace; letter-spacing: 0.06em; }
+
+    @media (max-width: 700px) {
+      .hero { padding-bottom: 90px; }
+      .scroll-cue { display: none; }
+      .gallery-preview { grid-template-columns: 1fr; }
+      .gallery-preview button,
+      .gallery-preview a { min-height: 330px; }
+      .gallery-preview button:nth-child(n + 4) { display: none; }
+      .description-section { grid-template-columns: 1fr; gap: 24px; padding-bottom: 90px; }
+      .description-copy { padding-top: 25px; }
+      .details { padding-bottom: 90px; }
+      .details-box { grid-template-columns: 1fr 1fr; }
+      .details-box > :first-child { grid-column: 1 / -1; }
+      .section-heading { display: block; }
+      .section-heading p { margin-top: 18px; }
+      .hero-bottom { margin-top: 35px; }
+      .contact-section { padding: 80px 5.5vw; }
+      .contact-actions { grid-template-columns: 1fr; margin-top: 34px; }
+      .contact-action { min-height: 95px; }
+      footer { gap: 14px; flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#accueil">NOÉ <span>/</span> PORTFOLIO</a>
+    <button class="menu-toggle" id="menuToggle" aria-controls="navPanel" aria-expanded="false">
+      <span class="menu-icon" aria-hidden="true"><i></i><i></i><i></i></span>
+      Menu
+    </button>
+  </header>
+
+  <nav class="nav-panel" id="navPanel" aria-label="Navigation principale">
+    <a href="#accueil" data-nav>Accueil</a>
+    <a href="#selection" data-nav>Sélection</a>
+    <button type="button" id="navGallery">Galerie complète</button>
+    <a href="#a-propos" data-nav>À propos</a>
+    <a href="#infos" data-nav>Informations</a>
+    <a href="#contact" data-nav>Contact</a>
+  </nav>
+
+  <main>
+    <section class="hero" id="accueil">
+      <img class="hero-image" src="https://i.ibb.co/q3jM999p/DSF0121.png" alt="Noé Cordel — portrait principal" />
+      <div class="hero-content">
+        <p class="eyebrow">Mannequin · Éditorial · France</p>
+        <h1>NOÉ <em>CORDEL</em></h1>
+        <div class="hero-bottom">
+          <p class="intro">Un regard contemporain, une présence affirmée. Disponible pour campagnes, éditoriaux, e-commerce et collaborations créatives.</p>
+          <div class="contact-links">
+            <!-- Remplace ces coordonnées par les tiennes -->
+            <a href="mailto:contact@noecordel.fr">contact@noecordel.fr</a>
+            <a href="tel:+33600000000">+33 6 00 00 00 00</a>
+            <a href="https://instagram.com/" target="_blank" rel="noreferrer">Instagram ↗</a>
+          </div>
+        </div>
+      </div>
+      <span class="scroll-cue">Défiler pour explorer</span>
+    </section>
+
+    <section class="gallery-section" id="selection">
+      <div class="section-heading">
+        <h2>En lumière.</h2>
+        <p>Une sélection de portraits et d'éditoriaux. Clique sur une image pour l'afficher en grand format.</p>
+      </div>
+      <div class="gallery-preview" id="previewGallery">
+        <a class="view-all-card" href="#" id="viewAllGallery" aria-label="Ouvrir la galerie complète">
+          <span class="view-all-number">09</span>
+          <span class="view-all-label">Explorer la<br>galerie complète</span>
+          <span class="view-all-arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="description-section" id="a-propos">
+      <div class="description-heading">
+        <p class="eyebrow">Mon univers</p>
+        <h2>À propos.</h2>
+      </div>
+      <div class="description-copy">
+        <!-- Modifie librement ce texte pour raconter ton parcours et ton positionnement. -->
+        <p>Je suis <strong>Noé Cordel</strong>, mannequin basé en France. J'explore une esthétique moderne, élégante et expressive, au croisement de la mode, de l'éditorial et de l'image de marque. Mon objectif : donner à chaque projet une <strong>présence singulière</strong>, naturelle et mémorable.</p>
+        <div class="description-tags" aria-label="Domaines de collaboration">
+          <span>Éditorial</span>
+          <span>Campagne</span>
+          <span>E-commerce</span>
+          <span>Beauté</span>
+          <span>Création de contenu</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="details" id="infos">
+      <div class="details-box">
+        <div><span class="detail-label">Disponibilité</span><span class="detail-value">France · International</span></div>
+        <div><span class="detail-label">Taille</span><span class="detail-value">À compléter</span></div>
+        <div><span class="detail-label">Mensurations</span><span class="detail-value">À compléter</span></div>
+        <div><span class="detail-label">Pointure</span><span class="detail-value">À compléter</span></div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-heading">
+        <p class="eyebrow">Travaillons ensemble</p>
+        <h2>Entrons en contact.</h2>
+        <p>Pour une campagne, un éditorial, une collaboration ou toute demande professionnelle, utilise le canal qui te convient le mieux.</p>
+      </div>
+      <div class="contact-actions">
+        <!-- Remplace email, téléphone et lien Instagram ci-dessous par tes coordonnées. -->
+        <a class="contact-action" href="mailto:contact@noecordel.fr">
+          <div><small>E-mail</small><span>contact@noecordel.fr</span></div>
+          <b aria-hidden="true">↗</b>
+        </a>
+        <a class="contact-action" href="tel:+33600000000">
+          <div><small>Téléphone</small><span>+33 6 00 00 00 00</span></div>
+          <b aria-hidden="true">↗</b>
+        </a>
+        <a class="contact-action" href="https://instagram.com/" target="_blank" rel="noreferrer">
+          <div><small>Instagram</small><span>@ton.compte</span></div>
+          <b aria-hidden="true">↗</b>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <aside class="side-panel" id="sidePanel" aria-label="Galerie complète">
+    <div class="side-panel-header">
+      <div>
+        <p class="eyebrow">Archives visuelles</p>
+        <h2>Galerie</h2>
+      </div>
+      <button class="close-panel" id="closeGallery" aria-label="Fermer la galerie">×</button>
+    </div>
+    <div class="album-grid" id="albumGrid"></div>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image agrandie">
+    <button class="lightbox-close" id="closeLightbox" aria-label="Fermer l'image">×</button>
+    <img id="lightboxImage" src="" alt="" />
+    <span class="lightbox-caption" id="lightboxCaption"></span>
+  </div>
+
+  <footer>
+    <span>© 2026 NOÉ CORDEL</span>
+    <span>MODEL PORTFOLIO / FR</span>
+  </footer>
+
+  <script>
+    const photos = [
+      { src: 'https://i.ibb.co/q3jM999p/DSF0121.png', title: 'Éditorial 01' },
+      { src: 'https://i.ibb.co/LXpT8dKp/IMG-20260531-WA0014.jpg', title: 'Portrait 02' },
+      { src: 'https://i.ibb.co/zVNFcpfK/IMG-4765.jpg', title: 'Studio 03' },
+      { src: 'https://i.ibb.co/7tBp1fbt/IMG-20260723-223822.png', title: 'Mode 04' },
+      { src: 'https://i.ibb.co/RWTgzGg/IMG-4739.jpg', title: 'Campagne 05' },
+      { src: 'https://i.ibb.co/FLrNdVkM/DSC05702.jpg', title: 'Éditorial 06' },
+      { src: 'https://i.ibb.co/sJbk0zb7/DSC05153.jpg', title: 'Portrait 07' },
+      { src: 'https://i.ibb.co/Wp6hbRXQ/DSC04877.jpg', title: 'Studio 08' },
+      { src: 'https://i.ibb.co/BVLntBZQ/DSC05099.jpg', title: 'Mode 09' }
+    ];
+
+    const previewGallery = document.getElementById('previewGallery');
+    const albumGrid = document.getElementById('albumGrid');
+    const sidePanel = document.getElementById('sidePanel');
+    const overlay = document.getElementById('overlay');
+    const menuToggle = document.getElementById('menuToggle');
+    const navPanel = document.getElementById('navPanel');
+    const navGallery = document.getElementById('navGallery');
+    const viewAllGallery = document.getElementById('viewAllGallery');
+    const closeGalleryButton = document.getElementById('closeGallery');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightboxImage');
+    const lightboxCaption = document.getElementById('lightboxCaption');
+    const closeLightboxButton = document.getElementById('closeLightbox');
+
+    function createPhotoButton(photo, className = '') {
+      const button = document.createElement('button');
+      button.className = className;
+      button.type = 'button';
+      button.innerHTML = `<img src="${photo.src}" alt="${photo.title}" loading="lazy"><span>${photo.title}</span>`;
+      button.addEventListener('click', () => openLightbox(photo));
+      return button;
+    }
+
+    photos.slice(0, 2).forEach(photo => previewGallery.appendChild(createPhotoButton(photo)));
+    photos.forEach(photo => albumGrid.appendChild(createPhotoButton(photo, 'album-item')));
+
+    function setMenu(isOpen) {
+      navPanel.classList.toggle('open', isOpen);
+      menuToggle.setAttribute('aria-expanded', String(isOpen));
+    }
+
+    function setGallery(isOpen) {
+      sidePanel.classList.toggle('open', isOpen);
+      overlay.classList.toggle('visible', isOpen);
+      document.body.classList.toggle('no-scroll', isOpen);
+    }
+
+    function openGallery(event) {
+      if (event) event.preventDefault();
+      setMenu(false);
+      setGallery(true);
+    }
+
+    function openLightbox(photo) {
+      lightboxImage.src = photo.src;
+      lightboxImage.alt = photo.title;
+      lightboxCaption.textContent = photo.title;
+      lightbox.classList.add('open');
+      setGallery(false);
+      document.body.classList.add('no-scroll');
+    }
+
+    function closeLightbox() {
+      lightbox.classList.remove('open');
+      document.body.classList.remove('no-scroll');
+    }
+
+    menuToggle.addEventListener('click', () => setMenu(!navPanel.classList.contains('open')));
+    document.querySelectorAll('[data-nav]').forEach(link => link.addEventListener('click', () => setMenu(false)));
+    navGallery.addEventListener('click', openGallery);
+    viewAllGallery.addEventListener('click', openGallery);
+    closeGalleryButton.addEventListener('click', () => setGallery(false));
+    overlay.addEventListener('click', () => setGallery(false));
+    closeLightboxButton.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', event => {
+      if (event.target === lightbox) closeLightbox();
+    });
+    document.addEventListener('click', event => {
+      if (!navPanel.contains(event.target) && !menuToggle.contains(event.target)) setMenu(false);
+    });
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape') {
+        setMenu(false);
+        setGallery(false);
+        closeLightbox();
+      }
+    });
+  </script>
+</body>
+</html>
