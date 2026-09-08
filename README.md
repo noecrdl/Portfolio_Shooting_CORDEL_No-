@@ -1159,39 +1159,39 @@
     const photos = [
       {
         src: "https://i.ibb.co/q3jM999p/DSF0121.png",
-        title: "Éditorial 01"
+        title: "Cliché 01"
       },
       {
         src: "https://i.ibb.co/LXpT8dKp/IMG-20260531-WA0014.jpg",
-        title: "Portrait 02"
+        title: "Cliché 02"
       },
       {
         src: "https://i.ibb.co/zVNFcpfK/IMG-4765.jpg",
-        title: "Studio 03"
+        title: "Cliché 03"
       },
       {
         src: "https://i.ibb.co/7tBp1fbt/IMG-20260723-223822.png",
-        title: "Mode 04"
+        title: "Cliché 04"
       },
       {
         src: "https://i.ibb.co/RWTgzGg/IMG-4739.jpg",
-        title: "Campagne 05"
+        title: "Cliché 05"
       },
       {
         src: "https://i.ibb.co/FLrNdVkM/DSC05702.jpg",
-        title: "Éditorial 06"
+        title: "Cliché 06"
       },
       {
         src: "https://i.ibb.co/sJbk0zb7/DSC05153.jpg",
-        title: "Portrait 07"
+        title: "Cliché 07"
       },
       {
         src: "https://i.ibb.co/Wp6hbRXQ/DSC04877.jpg",
-        title: "Studio 08"
+        title: "Cliché 08"
       },
       {
         src: "https://i.ibb.co/BVLntBZQ/DSC05099.jpg",
-        title: "Mode 09"
+        title: "Cliché 09"
       }
     ];
 
